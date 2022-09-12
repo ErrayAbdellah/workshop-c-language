@@ -12,6 +12,7 @@
 int main()
 	{
 		const double pi = 3.14159265359 ;
+		pi = 3.1414159265359;
 		double res ,r;
 		
 		printf("Entrez Le rayon r :  \n");

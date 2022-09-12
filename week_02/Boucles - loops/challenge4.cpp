@@ -11,28 +11,34 @@ Puis calcule et affiche la somme et le max des éléments de cette série.
 
 int main() {
      
-    int nbr , x = 0;
-    int T[100];
-         
-    printf("Veuillez entrer les nombres positifs inférieurs à 100 terminée par 0 : \n");
+    int nbr[100] , x , i , n,dr,somme;
+    int T;
+        x=i=n=dr=somme=0;
+    printf("Veuillez entrer les nombres positifs inferieurs a 100 terminee par 0 : \n");
 	
 	do{
 		scanf("%d",&nbr[i]);
+		dr = nbr[i];
 		if(nbr[i]>100) 
 		{
-			printf("Veuillez entrer les nombres positifs inférieurs à 100 terminée par 0 : \n");
+			printf("Veuillez entrer les nombres positifs inferieurs a 100 terminee par 0 : \n");
 			continue ;
 		}
+		i++;
+		n++;
 		
-	}while(a!=0);
+	}while(dr!=0);
+	printf("%d \n",n-1);
 	
-	
-	for(i=0;i<=nbr;i++)
+	for(i=0;i<n;i++)
 	{
-		if(T[i]> 0 )
+		if(nbr[i]> x )
 		{
-			x = T[i];
+			x = nbr[i];
 		}
+		somme += nbr[i];
 	}
+	
+	printf("max est : %d \nLa somme est : %d",x,somme);
     return 0;
 }

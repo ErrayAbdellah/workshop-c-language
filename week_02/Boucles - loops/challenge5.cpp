@@ -8,12 +8,20 @@ mais de construire l'entier inversé puis l'afficher. Ex: si l'entrée est 12345 o
 
 int main() {
      
-    int i ,
-    long nbr ,n;
+    int i  ,a=0,b=0;
+    int nbr;
     
     printf("Veuillez entrez un nombre : ");
     scanf("%d",&nbr);
     
-    k=
+	do
+	{
+		a = nbr % 10;
+	    b = (b * 10)+ a;
+	    nbr /= 10;
+	    
+	}while(nbr!=0);
+	
+	printf("%d",b);
     return 0;
 }

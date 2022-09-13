@@ -11,11 +11,10 @@ Par exemple, si le nombre entier est 234, son inverse est 432.
 
 int main()
 	{
-		int n , a , b;
+		int n , a , b=0;
 		
 		printf("Entrez un nombre entier à trois chiffres :  \n");
 		scanf("%d",&n);
-		int i=1;
 		
 			    a = n % 10;
 			    b = b * 10 + a;

@@ -24,8 +24,8 @@ int main() {
 			break;
 		}
 	}
-	if(f!=0) printf("le nombre non premier");
-	else printf("le nombre est premier");
+	if(f==0) printf("le nombre est premier");
+	else printf("le nombre non premier");
 			
     return 0;
 }

@@ -7,7 +7,6 @@ Le nombre de la base (>0) et l'exposant (>=0) sont pris dans les cas de test.
 
 #include<stdio.h>
 #include<conio.h>
-#include<math.h>
 
 
 
@@ -15,16 +14,16 @@ int main()
 	{
 		int x,y , i=1 ,p=1;
 	    printf("donner Le nombre de la base x : ");
-	    scanf ("%d",&x);
+	    scanf ("%d",&x); 
 	    printf("donner Le nombre de l'exposant y : ");
 	    scanf ("%d",&y);
 	    	
 	    if(x==0)
 			printf("Le resultat est 0");
-	    else if (x==0)
+	    else if (y==0)
 	        printf("Le resultat est 1");
 		else {
-			while(i<=y)
+			while(i<=y) //y=4
 			{
 				p *= x;
 				i++;
